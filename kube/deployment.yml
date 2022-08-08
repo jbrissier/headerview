@@ -1,0 +1,24 @@
+
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hview-deployment
+  namespace: test
+  labels:
+    app: hview
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hview
+  template:
+    metadata:
+      labels:
+        app: hview
+    spec:
+      containers:
+      - name: hview
+        image: yourreg.com/hview:latest
+        ports:
+        - containerPort: 8080

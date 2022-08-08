@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: hview-server
+  namespace: test
+spec:
+  type: LoadBalancer
+  externalTrafficPolicy: Local
+  selector:
+    app: hview
+  ports:
+    - port: 80
+      targetPort: 8080
