@@ -1,8 +1,10 @@
 
 # HView 
 
-Helps you to debug network configuraitons in your kubernetes cluster 
-It is easy do build and to deploy. It listens on port 8080
+Helps you to debug network configuraitons in your kubernetes cluster.
+It is easy do build and to deploy.
+
+Server is listening on port 8080 ( default )
 
 
 ## HTTP Return
@@ -30,3 +32,8 @@ IP:
 
 
 ```
+
+## Settings via ENVIROMENT
+
+
+* H_VIEW_PORT = Listening PORT
