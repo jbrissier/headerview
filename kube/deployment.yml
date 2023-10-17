@@ -19,6 +19,6 @@ spec:
     spec:
       containers:
       - name: hview
-        image: yourreg.com/hview:latest
+        image: registry.gross-bau.de/hview:latest
         ports:
         - containerPort: 8080
